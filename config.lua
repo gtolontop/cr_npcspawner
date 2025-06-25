@@ -4,7 +4,7 @@ Config.DrawDistance = 50.0
 
 Config.NPCTable = {
   {
-    coords = { x = 215.76, y = -810.12, z = 29.73, h = 160.0 },
+    coords = { x = -1697.40, y = -810.12, z = -1109.92, h = 13.13 },
     model = "csb_mweather",
     hasAnimation = true,
     animDict = "amb@world_human_stand_impatient@male@no_sign@idle_a",
