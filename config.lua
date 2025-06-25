@@ -2,6 +2,7 @@ Config = {}
 
 Config.TextDrawDistance    = 15.0
 Config.PedActivateDistance = 100.0
+Config.Debug = true
 
 Config.NPCTable = {
   -- 1. Citoyen en pleine fête
