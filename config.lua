@@ -2,29 +2,30 @@ Config = {}
 
 Config.DrawDistance = 50.0
 
+
 Config.NPCTable = {
   {
-    coords = { x = -1697.40, y = -810.12, z = -1109.92, h = 13.13 },
-    model = "csb_mweather",
+    coords    = vec4(-1697.406616, -1109.920898, 13.137695, 260.787415),
+    model     = "csb_mweather",
     hasAnimation = true,
-    animDict = "amb@world_human_stand_impatient@male@no_sign@idle_a",
-    animName = "idle_a",
-    category = "vendor",
-    texts = {
-      "Achetez vos boissons ici !",
-      "Promos spéciales du jour !",
-      "Besoin d’un truc ? Je vends tout !"
+    animDict  = "amb@world_human_stand_impatient@male@no_sign@idle_a",
+    animName  = "idle_a",
+    category  = "vendor",
+    texts     = {
+      "Bienvenue chez le marchand !",
+      "Je vends les meilleurs produits !",
+      "N’hésitez pas à jeter un œil !"
     }
   },
   {
-    coords = { x = 217.76, y = -810.12, z = 29.73, h = 160.0 },
-    model = "a_m_m_farmer_01",
+    coords    = vec4(-1695.00, -1110.50, 13.14, 90.0),
+    model     = "a_m_m_farmer_01",
     hasAnimation = false,
-    category = "citizen",
-    texts = {
-      "Quel temps magnifique…",
-      "La vie est belle ici !",
+    category  = "citizen",
+    texts     = {
+      "Quel beau quartier…",
+      "La vie est douce ici.",
       "Salut voisin !"
     }
-  }
+  },
 }
