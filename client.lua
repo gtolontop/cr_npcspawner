@@ -6,9 +6,10 @@ Citizen.CreateThread(function()
     RequestModel(hash)
     while not HasModelLoaded(hash) do Wait(1) end
 
-    local ped = CreatePed(4, hash,
-      npc.coords.x, npc.coords.y, npc.coords.z - 1.0,
-      npc.coords.h, false, true)
+    local pos = npc.coords
+    local x, y, z, h = pos.x, pos.y, pos.z, pos.w
+
+    local ped = CreatePed(4, hash, x, y, z - 1.0, h, false, true)
 
     FreezeEntityPosition(ped, true)
     SetEntityInvincible(ped, true)
@@ -21,7 +22,6 @@ Citizen.CreateThread(function()
     end
 
     npcList[i] = { ped = ped, text = nil }
-
     Citizen.SetTimeout(math.random(5000,10000), function()
       updateNPCText(i)
     end)
